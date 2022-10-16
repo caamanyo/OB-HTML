@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: beige;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 30px;
+}
+
+section {
+  flex-grow: 9;
+  padding: 10rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    flex-direction: row;
+    height: 30%;
+    justify-content: center;
+  }
+}
